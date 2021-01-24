@@ -19,7 +19,7 @@ USER kong
 
 ## To load while starting Kong, Set the follwing variable:
 ```
-KONG_CUSTOM_PLUGINS=kong-plugin-static-response
+KONG_PLUGINS=bundled,static-response
 ```
 [badge-travis-url]: https://travis-ci.org/Kong/kong-plugin/branches
 [badge-travis-image]: https://travis-ci.com/Kong/kong-plugin.svg?branch=master
