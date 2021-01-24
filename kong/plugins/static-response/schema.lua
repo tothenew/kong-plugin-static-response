@@ -23,11 +23,6 @@ local schema = {
           { content_type = {
               type = "string",
               default = "application/json; charset=UTF-8" }},
-          { ttl = {
-              type = "integer",
-              default = 600,
-              required = true,
-              gt = 0, }},
         },
         entity_checks = {
           -- add some validation rules across fields

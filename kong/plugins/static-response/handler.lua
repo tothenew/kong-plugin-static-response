@@ -1,8 +1,8 @@
 local kong = kong
 
 local plugin = {
-  PRIORITY = 1001, -- set the plugin priority, which determines plugin execution order
-  VERSION = "0.1",
+  PRIORITY = 5001, -- set the plugin priority, which determines plugin execution order
+  VERSION = "0.1.0-4",
 }
 
 
