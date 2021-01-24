@@ -5,15 +5,20 @@ Kong Plugin Static Response
 
 This repository contains a very simple Kong plugin for Static Response.
 
+Install in Docker:
 
-Kong Plugin Templete
-====================
+build your own custom docker image and use kong image as base docker image.
 
-I have used follwing template from Kong for this plugin. This template was designed to work with the
-[`kong-pongo`](https://github.com/Kong/kong-pongo) and
-[`kong-vagrant`](https://github.com/Kong/kong-vagrant) development environments.
+FROM kong:latest  
+USER root
+RUN apk update && apk add git unzip luarocks
+RUN luarocks install kong-plugin-static-response
+USER kong
 
-Please check out those repos `README` files for usage instructions.
+
+To load while starting Kong, Set the follwing variable:
+
+KONG_CUSTOM_PLUGINS=kong-plugin-static-response
 
 [badge-travis-url]: https://travis-ci.org/Kong/kong-plugin/branches
 [badge-travis-image]: https://travis-ci.com/Kong/kong-plugin.svg?branch=master
