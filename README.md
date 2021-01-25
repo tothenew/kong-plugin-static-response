@@ -17,9 +17,18 @@ RUN luarocks install kong-plugin-static-response
 USER kong
 ```
 
-## To load while starting Kong, Set the follwing variable:
+## To load Set the follwing variable:
 ```
 KONG_PLUGINS=bundled,static-response
 ```
+
+## Add Plugin
+
+![GitHub Logo](/images/add_plugin.png)
+
+## Set Content
+
+![GitHub Logo](/images/add_response.png)
+
 [badge-travis-url]: https://travis-ci.org/Kong/kong-plugin/branches
 [badge-travis-image]: https://travis-ci.com/Kong/kong-plugin.svg?branch=master
