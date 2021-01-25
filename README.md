@@ -9,12 +9,18 @@ This repository contains a very simple Kong plugin for Static Response.
 
 build your own custom docker image and use kong image as base docker image.
 
+```vi Dockerfile```
+
 ```
 FROM kong:latest
 USER root
 RUN apk update && apk add git unzip luarocks
 RUN luarocks install kong-plugin-static-response
 USER kong
+```
+
+```
+docker build -t kong:with-static-response-plugin .
 ```
 
 ## To load Set the follwing variable:
