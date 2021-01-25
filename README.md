@@ -26,7 +26,7 @@ docker build -t kong:with-static-response-plugin .
 ## Use my Docker repo (Kong Version 2.3.0):
 
 ```
-docker push nbhadauria/kong-plugin-static-response:latest
+docker pull nbhadauria/kong-plugin-static-response:latest
 ```
 
 ## To load Set the follwing variable:
