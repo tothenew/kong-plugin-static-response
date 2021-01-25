@@ -5,7 +5,7 @@ Kong Plugin Static Response
 
 This repository contains a very simple Kong plugin for Static Response.
 
-## Install in Docker:
+## Build your Docker Image:
 
 build your own custom docker image and use kong image as base docker image.
 
@@ -21,6 +21,12 @@ USER kong
 
 ```
 docker build -t kong:with-static-response-plugin .
+```
+
+## Use my Docker repo (Kong Version 2.3.0):
+
+```
+docker push nbhadauria/kong-plugin-static-response:latest
 ```
 
 ## To load Set the follwing variable:
