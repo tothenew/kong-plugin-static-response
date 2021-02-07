@@ -5,6 +5,18 @@ Kong Plugin Static Response
 
 This repository contains a very simple Kong plugin for Static Response.
 
+
+## Install from Luarocks
+
+I have published the plugin to Luarocks as recommended at Kong Plugin Development [Guide](https://docs.konghq.com/gateway-oss/0.10.x/plugin-development/distribution/#installing-the-plugin) 
+
+You can directly install any where you are running kong, by following below steps:
+
+```
+apk update && apk add git unzip luarocks
+luarocks install kong-plugin-static-response
+```
+
 ## Build your Docker Image:
 
 build your own custom docker image and use kong image as base docker image.
